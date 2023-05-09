@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Challange 1</title>
+  </head>
+  <body>
+    <article class="artical1">
+      <h2 class="title">One Piece for Girls</h2>
+      <img class="image_girl_cloth" src="./imgs/cloth2.jpg" alt="cloth image" />
+      <h3 class="price">$89</h3>
+
+      <h3><strong>Free Shipping</strong></h3>
+      <h4>
+        Ready to dress up or down, these classic canvas Chucks are an everyday
+        wardrobe staple
+      </h4>
+
+      <!-- <iframe
+        src="https://streetstylestalk.com/products/date-ready-maroon-shift-dress"
+        name="frame"
+        frameborder="0"
+      ></iframe> -->
+      <a
+        class="more_info"
+        href="https://streetstylestalk.com/products/date-ready-maroon-shift-dress"
+        target=""
+        >More information &rarr;</a
+      >
+      <ul class="list_1">
+        <li>Easy Return, Replacement within 7 days of delivery.</li>
+        <li>Free Shipping Above Rs 2500</li>
+        <li>Rs 99 shipping charges below Rs 2500</li>
+      </ul>
+      <button class="btn1">Add to Cart</button>
+
+      <div class="toggle">
+        <label for="toggle_content">Show/Hide Content</label>
+        <input class="checkbox" type="checkbox" name="toggle_content" />
+    </div>
+    <div class="prectice_content">
+        <article>
+          <h1>The map and area elements</h1>
+
+          <p>
+            Click on the computer, the phone, or the cup of coffee to go to a
+            new page and read more about the topic:
+          </p>
+
+          <img
+            src="./imgs/Screenshot.png"
+            alt="Workplace"
+            usemap="#workmap"
+            width="400"
+            height="379"
+          />
+
+          <map name="workmap">
+            <area
+              shape="rect"
+              coords="34,44,270,350"
+              alt="Computer"
+              href="computer.html"
+            />
+            <area
+              shape="rect"
+              coords="290,172,333,250"
+              alt="Phone"
+              href="phone.html"
+            />
+            <area
+              shape="circle"
+              coords="337,300,44"
+              alt="Cup of coffee"
+              href="coffee.html"
+            />
+          </map>
+        </article>
+
+        <article>
+          <h1>set progress bar using meter tag</h1>
+
+          <label for="disk_c">Disk usage C:</label>
+          <meter id="disk_c" value="5" min="0" max="20">2 out of 10</meter
+          ><br />
+
+          <label for="disk_d">Disk usage D:</label>
+          <meter id="disk_d" value="0.6">60%</meter>
+        </article>
+      </div>
+    </article>
+  </body>
+</html>

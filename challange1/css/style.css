@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.image_girl_cloth,
+.price,
+h3,
+.more_info,
+.list_1,
+.btn1,
+.toggle {
+  margin-top: 20px;
+}
+.artical1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.image_girl_cloth {
+  height: 400px;
+  width: 350px;
+  border: 1px solid red;
+}
+.price {
+  font-size: 22px;
+}
+.more_info {
+  color: #444;
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li {
+  font-size: 18px;
+}
+li:first-child {
+  color: blue;
+  font-weight: 900;
+}
+.btn1 {
+  padding: 20px;
+  background-color: lightblue;
+}
+.prectice_content{
+    display: none;
+}
+.toggle:has(.checkbox:checked) + .prectice_content{
+    display: block;
+}
