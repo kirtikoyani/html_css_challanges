@@ -2,13 +2,12 @@
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
-.image_girl_cloth,
-.price,
-h3,
-.more_info,
-.list_1,
+
+.colors,
 .btn1,
+.discription,
 .toggle {
   margin-top: 20px;
 }
@@ -18,10 +17,25 @@ h3,
   justify-content: center;
   align-items: center;
 } */
+.more_info{
+  line-height: 3;
+}
 .artical1{
+  position: relative;
   display: block;
   width: 500px;
-  margin: 0 auto;
+  margin: 20px auto;
+  border: 5px solid black;
+}
+.sale{
+  left: -35px;
+  top: -18px;
+  position: absolute;
+  font-size: 12px;
+  padding: 10px 20px;
+  background-color: red;
+  font-weight: 700;
+  color: white;
 }
 .title {
   background-color: #f7f7f7;
@@ -30,34 +44,85 @@ h3,
   width: 100%;
 }
 .image_girl_cloth {
-  height: 400px;
-  width: 350px;
-  border: 1px solid red;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
 }
 .price {
-  font-size: 22px;
+  font-size: 24px;
 }
 .more_info {
   color: #444;
-  font-weight: 900;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
 }
-
-li {
-  font-size: 18px;
+.more_info:hover{
+  text-decoration: underline;
 }
-li:first-child {
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+li {
+  font-size: 15px;
+  list-style: square;
+  margin-left: 20px;
+}
+/* li:first-child {
   color: blue;
   font-weight: 900;
-}
+} */
 .btn1 {
-  padding: 10px 20px;
-  background-color: lightblue;
+  /* padding: 10px 20px; */
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-weight: 700;
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.btn1:hover{
+  background-color: white;
+  color: black;
 }
 .prectice_content{
     display: none;
 }
 .toggle:has(.checkbox:checked) + .prectice_content{
     display: block;
+}
+.black,.red,.yellow,.brown,.green,.blue{
+width: 20px;
+height: 20px;
+margin: 0 0 0 15px;
+}
+.black{
+  background-color: black;
+  margin: 0;
+}
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
+.brown{
+  background-color: brown;
+}
+.blue{
+  background-color: blue;
+}
+.colors{
+  display: flex;
+  justify-content: left;
+}
+.shipping{
+  color: #777;
 }
