@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 .image_girl_cloth,
@@ -12,11 +12,16 @@ h3,
 .toggle {
   margin-top: 20px;
 }
-.artical1 {
+/* .artical1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+.artical1{
+  display: block;
+  width: 500px;
+  margin: 0 auto;
 }
 .title {
   background-color: #f7f7f7;
@@ -47,7 +52,7 @@ li:first-child {
   font-weight: 900;
 }
 .btn1 {
-  padding: 20px;
+  padding: 10px 20px;
   background-color: lightblue;
 }
 .prectice_content{
