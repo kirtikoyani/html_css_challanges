@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- position css  -->
+    <!-- <link rel="stylesheet" href="./css/position.css" /> -->
+    <!-- float layout  -->
+    <!-- <link rel="stylesheet" href="./css/float.css" /> -->
+    <!-- flex css  -->
+    <link rel="stylesheet" href="./css/flex.css" />
+    <!-- gird css  -->
+    <!-- <link rel="stylesheet" href="./css/grid.css" /> -->
     <title>Challange</title>
   </head>
   <body>
     <article class="artical1 clearfix">
       <h2 class="title">One Piece for Girls</h2>
+      <div class="main_perent">
       <div class="img">
         <img
           class="image_girl_cloth"
@@ -18,7 +26,7 @@
         />
       </div>
       <div class="shipping">
-        <div>
+        <div class="price_shipping">
           <h3 class="price">$89</h3>
           <p class="free_shipping"><strong>Free Shipping</strong></p>
         </div>
@@ -50,6 +58,7 @@
           <li>Rs 99 shipping charges below Rs 2500</li>
         </ul>
       </div>
+    </div>
       <button class="btn1">Add to Cart</button>
 
       <div class="toggle">
@@ -106,7 +115,7 @@
           <meter id="disk_d" value="0.6">60%</meter>
         </article>
       </div>
-      <div class="sale">SALE</div>
+      <button class="sale">SALE</button>
     </article>
   </body>
 </html>
