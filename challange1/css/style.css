@@ -6,10 +6,12 @@
 }
 
 .colors,
-.btn1,
 .discription,
 .toggle {
   margin-top: 20px;
+}
+.discription{
+  clear: both;
 }
 /* .artical1 {
   display: flex;
@@ -23,7 +25,7 @@
 .artical1{
   position: relative;
   display: block;
-  width: 500px;
+  width: 900px;
   margin: 20px auto;
   border: 5px solid black;
 }
@@ -44,12 +46,13 @@
   width: 100%;
 }
 .image_girl_cloth {
-  height: 250px;
-  width: 250px;
+  height: 275px;
+  width: 275px;
   object-fit: cover;
 }
 .price {
   font-size: 24px;
+  float: left;
 }
 .more_info {
   color: #444;
@@ -68,6 +71,7 @@
 }
 li {
   font-size: 15px;
+  line-height: 1.7;
   list-style: square;
   margin-left: 20px;
 }
@@ -123,6 +127,33 @@ margin: 0 0 0 15px;
   display: flex;
   justify-content: left;
 }
-.shipping{
+.free_shipping{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
   color: #777;
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.img,.shipping{
+  float: left;
+  width: 275px;
+  margin-right: 20px;
+}
+
+.shipping{
+  margin-top: 20px;
+}
+.details{
+  float: right;
+  width: 275px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
