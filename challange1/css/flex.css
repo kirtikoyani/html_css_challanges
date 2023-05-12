@@ -40,7 +40,7 @@
 }
 .image_girl_cloth {
   height: 275px;
-  /* min-width: 275px; */
+  min-width: 275px;
   object-fit: cover;
 }
 .price {
@@ -132,7 +132,7 @@ li {
 .img,
 .shipping,
 .details {
-  width: 31%;
+  flex: 1;
 }
 .details {
   padding-bottom: 36px;
@@ -144,7 +144,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 .price_shipping {
   display: flex;
