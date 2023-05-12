@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: grid;
+        background-color: blue;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        height: 500px;
+      }
+      .child {
+        /* display: grid;
+        justify-content: center;
+        align-content: flex-start; */
+        background-color: blanchedalmond;
+        place-self: center;
+        width: 100%;
+        height: 100%;
+      }
+      .header {
+        grid-area: hd;
+        background-color: blanchedalmond;
+      }
+      .side {
+        grid-area: sd;
+        background-color: blanchedalmond;
+      }
+      .content {
+        grid-area: cn;
+        background-color: blanchedalmond;
+      }
+      .main {
+        grid-area: mn;
+        background-color: blanchedalmond;
+      }
+      .footer {
+        grid-area: ft;
+        background-color: blanchedalmond;
+      }
+      .aside {
+        grid-area: as;
+        background-color: blanchedalmond;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 10px;
+        border: 9px solid;
+    background: black;
+        grid-template-areas:
+          "hd hd hd"
+          "sd cn cn"
+          "mn mn mn"
+          "ft ft as";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child" style="grid-area: 1/1/2/4">Header</div>
+      <div class="child" style="grid-area: 2/1/3/2">Sidebar</div>
+      <div class="child" style="grid-area: 2/2/3/4">Content</div>
+      <div class="child" style="grid-area: 3/1/4/4">main</div>
+      <div class="child" style="grid-area: 5/1/4/3">Footer</div>
+      <div class="child" style="grid-area: 5/3/4/4">Aside</div>
+    </div>
+    <br><br>
+    <div class="layout">
+      <div class="header">Header</div>
+      <div class="side">Sidebar</div>
+      <div class="content">Content</div>
+      <div class="main">main</div>
+      <div class="footer">Footer</div>
+      <div class="aside">Aside</div>
+    </div>
+  </body>
+</html>
