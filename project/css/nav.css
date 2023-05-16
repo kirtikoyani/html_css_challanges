@@ -1,0 +1,29 @@
+.booking_btn {
+  padding: 5px 18px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: black;
+  border: 2px solid;
+}
+
+.nav_content {
+  display: flex;
+  gap: 30px;
+}
+.nav_element {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: #000;
+}

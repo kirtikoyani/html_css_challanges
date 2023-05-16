@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import "./humbergermenu.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "lato", sans-serif;
+  color: #444;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.header-container {
+  width: 75%;
+  margin: 16rem auto;
+  color: white;
+  text-align: center;
+}
+nav {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-image: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(64, 64, 68, 0.3) 51%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  justify-content: space-between;
+}
+h1 {
+  font-size: 52px;
+  margin-bottom: 32px;
+  line-height: 1.05;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.logo {
+  color: #fff;
+}
+.btn:link,
+.btn:visited {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(2, 0, 36, 1);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 9px;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+section {
+  padding: 96px 0;
+  background-color: #f7f7f7;
+}
+
+.box_image {
+  animation: changeBg 5s infinite;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes changeBg {
+  0%,
+  100% {
+    background-image: linear-gradient(
+        351deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(64, 64, 68, 0.3) 51%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url("https://i.pinimg.com/originals/0f/5c/dd/0f5cdde4c3bcad92a80736391408bfd8.jpg");
+  }
+  25% {
+    background-image: linear-gradient(
+        351deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(64, 64, 68, 0.3) 51%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url("https://i.pinimg.com/originals/aa/77/e0/aa77e0b077df69adcfec786e69cda094.jpg");
+  }
+  50% {
+    background-image: linear-gradient(
+        351deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(64, 64, 68, 0.3) 51%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url("https://i.pinimg.com/originals/f9/8f/c3/f98fc3e8cbfda3552163fc76204749eb.jpg");
+  }
+  75% {
+    background-image: linear-gradient(
+        351deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(64, 64, 68, 0.3) 51%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      url("https://i.pinimg.com/750x/81/14/a8/8114a87f54d7102e04d66ebf406bed45.jpg");
+  }
+}
+.nav_content {
+  display: flex;
+  gap: 30px;
+}
+.nav_element {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar {
+  display: flex;
+}
+.navigation__button {
+  display: none;
+}
+.navigation__background {
+  display: none;
+}
+/* about  */
+.about_us {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about_text {
+  width: 30%;
+}
+.about_img_parent {
+  width: 30%;
+}
+.about_image_child {
+  position: relative;
+}
+.about_img {
+  width: 55%;
+  height: 200px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.about_img1 {
+  left: 0;
+  top: -2rem;
+}
+.about_img2 {
+  right: 0;
+  top: 2rem;
+}
+.about_img3 {
+  left: 20%;
+  top: 10rem;
+}
+.title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.about_img:hover {
+  outline: 3px solid rgba(2, 0, 36, 1);
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.booking_btn {
+  padding: 5px 18px;
+  border-radius: 6px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  border: 2px solid;
+}
+/* features  */
+.feature {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.features {
+  display: flex;
+  column-gap: 80px;
+  row-gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+.feature__icon {
+  fill: rgba(2, 0, 36, 1);
+  width: 3rem;
+  height: 3rem;
+  margin: 20px auto;
+}
+.feature_h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+/* form  */
+.section-book {
+  background-image: linear-gradient(
+    125deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(64, 64, 68, 0.3) 51%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 50%
+    ),
+    url("../img/chair4.png");
+  background-size: 100%;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 32rem;
+}
+.book__form {
+  width: 50%;
+  padding: 2rem;
+}
+
+.section-book {
+  padding: 0;
+}
+.row {
+  padding: 6rem;
+}
+.form__input {
+  font-size: 18px;
+  font-family: serif;
+  color: inherit;
+  padding: 12px;
+  border-radius: 2px;
+  background-color: rbga(#fff, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form__radio-group {
+  width: 49%;
+  display: flex;
+  align-items: center;
+}
+.form__group {
+  width: 80%;
+}
+
+.form__radio-label {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.u-margin-bottom-medium {
+  display: flex;
+}
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.heading-secondary {
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+.btn_form {
+  margin-top: 50px;
+}
+/* footer  */
+.footer {
+  background-color: rgba(2, 0, 36, 1);
+  color: white;
+}
+.footer_div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+}
+.copyright {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #aaa;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
+}
+.video_section {
+  padding: 65px 0;
+}
+
+/* media query  */
+@media only screen and (max-width: 1024px) {
+  .u-margin-bottom-medium {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about_text {
+    width: 40%;
+  }
+  .about_img_parent {
+    width: 40%;
+  }
+  .row {
+    padding: 4rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .navigation__button {
+    display: inline-block;
+  }
+  .navigation__background {
+    display: block;
+  }
+  .navigation__checkbox:checked ~ .navbar {
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+  }
+  body:has(.navigation__checkbox:checked) {
+    position: fixed;
+  }
+  .navigation__checkbox:checked ~ nav {
+    flex-direction: column;
+    gap: 50px;
+    opacity: 1;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    background-image: linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 0.8) 100%,
+      rgba(64, 64, 68, 0.3) 51%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  }
+  .navigation__checkbox:checked ~ .navbar > .nav_content {
+    flex-direction: column;
+  }
+  .navigation__checkbox:checked ~ .navbar > .booking_btn {
+    margin-bottom: 19rem;
+  }
+  .navigation__checkbox:checked ~ .navbar > .logo {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .header-container {
+    margin: 4rem auto;
+    padding-top: 10rem;
+  }
+  .footer_div {
+    flex-wrap: wrap;
+  }
+  .book {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../img/chair4.png);
+  }
+  .book__form {
+    width: 100%;
+  }
+  .u-margin-bottom-medium {
+    width: 100%;
+  }
+  .u-margin-bottom-medium {
+    width: 100%;
+  }
+  .about_us {
+    flex-wrap: wrap;
+  }
+  .about_text {
+    width: 100%;
+    text-align: center;
+  }
+  .about_img_parent {
+    width: 100%;
+    margin: 69px 20px;
+  }
+  .video_section {
+    padding: 96px 0;
+    margin-top: 15rem;
+  }
+  .feature {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .book {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 59%,
+        transparent 50%
+      ),
+      url(../img/chair4.png);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .row {
+    padding: 2rem;
+  }
+  .feature {
+    width: 100%;
+  }
+  .features {
+    row-gap: 0;
+  }
+  section {
+    padding: 48px 0;
+  }
+  .video_section {
+    padding: 65px 0 35px 0;
+  }
+  .feature_h2 {
+    margin-bottom: 17px;
+  }
+}
+@media only screen and (max-width: 357px) {
+  .book {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 68%,
+        transparent 50%
+      ),
+      url(../img/chair4.png);
+  }
+}
+@media only screen and (max-width: 320px) {
+  .row {
+    padding: 0px;
+  }
+  .book {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 60%,
+        transparent 50%
+      ),
+      url(../img/chair4.png);
+  }
+}
