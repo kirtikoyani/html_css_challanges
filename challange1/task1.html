@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .all_food,
+      .all_fruites,
+      .all_vegetables,
+      .all_dryfruites {
+        display: none;
+      }
+      .fruites,
+      .vegetables,
+      .dryfruites {
+        display: flex;
+        align-items: stretch;
+        /* gap: 70px; */
+      }
+      .main_div:hover .all_food,
+      .fruites:hover .all_fruites,
+      .vegetables:hover .all_vegetables,
+      .dryfruites:hover .all_dryfruites {
+        display: block;
+        list-style: none;
+        font-size: 20px;
+        /* padding: 20px; */
+      }
+      p {
+        padding: 10px;
+        width: 15rem;
+        height: auto;
+        /* margin: 10px; */
+        background-color: #343a40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+      .accordion {
+        width: 288px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .item {
+        /* box-shadow: 0 0 32px rgba(0, 0, 0, 0.1); */
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sub-li-tags {
+        width: 9rem;
+        display: flex;
+        height: 5rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .sub-li-tags:hover{
+        background-color: #343a40;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <div class="main_div">
+          <p class="text" style="padding: 20px;">select Options</p>
+          <ul class="all_food">
+            <li class="fruites">
+              <p>fruites</p>
+              <ul class="all_fruites">
+                <li class="sub-li-tags">Apples</li>
+                <li class="sub-li-tags">Banana</li>
+              </ul>
+            </li>
+            <li class="vegetables">
+              <p>vegetables</p>
+              <ul class="all_vegetables">
+                <li class="sub-li-tags">Tometo</li>
+                <li class="sub-li-tags">Poteto</li>
+                <li class="sub-li-tags">Corn</li>
+                <li class="sub-li-tags">Garlic</li>
+              </ul>
+            </li>
+            <li class="dryfruites">
+              <p>Dry fruites</p>
+              <ul class="all_dryfruites">
+                <li class="sub-li-tags">Cashew</li>
+                <li class="sub-li-tags">Almond</li>
+                <li class="sub-li-tags">Peanut</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul
+        style="
+          display: grid;
+          list-style-type: none;
+          grid-template-columns: repeat(3,1fr) 10fr repeat(4,1fr);
+          grid-template-rows: 1fr;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        "
+      >
+        <li>kitti</li>
+        <li>kitti</li>
+        <li>kitti</li>
+        <li style="flex: 1 0 auto">kdkdf</li>
+        <li>kitti</li>
+        <li>kitti</li>
+        <li>kdkdf</li>
+        <li>kdkdf</li>
+      </ul>
+    </div>
+  </body>
+</html>
