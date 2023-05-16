@@ -27,7 +27,6 @@
 body {
   font-family: "lato", sans-serif;
   color: #444;
-  /* padding: 20px; */
 }
 .container {
   width: 100%;
@@ -74,6 +73,9 @@ section {
     padding: 16px 23px;
     width: 70%;
   }
+  h2{
+    font-size: 35px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .navigation {
@@ -95,7 +97,6 @@ section {
     position: absolute;
     width: 100%;
     z-index: 30;
-    /* padding-top: 153px; */
     font-size: 32px;
     background: rgba(255, 255, 255, 0.8);
   }
@@ -159,5 +160,9 @@ section {
   }
   section {
     padding: 64px 0;
+  }
+  .slider_text {
+    font-size: 30px;
+    transform: translate(-33%, -50%);
   }
 }

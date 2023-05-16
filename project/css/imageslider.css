@@ -18,6 +18,8 @@
   left: 50%;
   color: #000;
   z-index: 5;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .img_section {
   width: 100%;
